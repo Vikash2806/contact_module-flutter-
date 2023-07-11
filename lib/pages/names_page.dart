@@ -9,7 +9,7 @@ class NamesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final args = ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
-    final names = args['names'] as List<String>;
+    final names = args['names'] as List<String>;//: This line extracts the value associated with the key 'names' from the args map.
     final csvData = args['csvData'] as List<List<dynamic>>;
 
     return Scaffold(
